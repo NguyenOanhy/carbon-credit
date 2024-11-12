@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Contact from "./components/Contact.js";
 function App() {
   return (
     <div className="bg-gray-100 text-gray-900">
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <HowItWorks />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
