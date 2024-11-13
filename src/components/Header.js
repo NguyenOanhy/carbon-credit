@@ -8,6 +8,7 @@ function Header() {
         <nav>
           <a href="#features" className="mx-4 text-gray-700 hover:text-green-600 transition duration-300">Features</a>
           <a href="#how-it-works" className="mx-4 text-gray-700 hover:text-green-600 transition duration-300">How It Works</a>
+          <a href="#about" className="mx-4 text-gray-700 hover:text-green-600 transition duration-300">About</a>
           <a href="#contact" className="mx-4 text-gray-700 hover:text-green-600 transition duration-300">Contact</a>
         </nav>
       </div>
