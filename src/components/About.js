@@ -3,24 +3,24 @@ import React from "react";
 function About() {
   const teamMembers = [
     {
-      name: "Member 1",
+      name: "Nguyen Huy Hieu",
       role: "Project Manager",
-      description: "Chuyên gia quản lý dự án với hơn 5 năm kinh nghiệm trong lĩnh vực carbon credit",
+      image: "/member/hieu.jpg",
     },
     {
-      name: "Member 2",
-      role: "Technical Lead",
-      description: "Kỹ sư phần mềm với chuyên môn về blockchain và smart contracts",
+      name: "Nguyen Thi Oanh",
+      role: "Software Engineer",
+      image: "/member/oanh.jpg",
     },
     {
-      name: "Member 3",
-      role: "Environmental Specialist",
-      description: "Chuyên gia môi trường với kiến thức sâu rộng về carbon footprint",
+      name: "Do Duc Huy",
+      role: "Software Engineer",
+      image: "/member/huy.jpg",
     },
     {
-      name: "Member 4",
+      name: "Ngo Phuong Ngoc",
       role: "Business Analyst",
-      description: "Chuyên gia phân tích kinh doanh với kinh nghiệm trong thị trường carbon",
+      image: "/member/ngoc.jpg",
     },
   ];
 
@@ -34,14 +34,29 @@ function About() {
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="w-32 h-32 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
-                <span className="text-green-600 text-3xl font-bold">
-                  {member.name.charAt(0)}
-                </span>
+              <div className="w-32 h-32 mx-auto mb-6 bg-green-100 rounded-full overflow-hidden">
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                ) : null}
+                <div 
+                  className="w-full h-full flex items-center justify-center"
+                  style={{ display: member.image ? 'none' : 'flex' }}
+                >
+                  <span className="text-green-600 text-3xl font-bold">
+                    {member.name.charAt(0)}
+                  </span>
+                </div>
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h4>
               <h5 className="text-green-600 font-semibold mb-3">{member.role}</h5>
-              <p className="text-gray-600">{member.description}</p>
             </div>
           ))}
         </div>
