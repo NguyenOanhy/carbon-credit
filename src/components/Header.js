@@ -19,7 +19,7 @@ function Header() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-green-600 hover:text-green-700 transition duration-300">
-          Carbon Credit
+          Carbon4U
         </h1>
         <nav className="flex space-x-6">
           <a
