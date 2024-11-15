@@ -25,38 +25,38 @@ function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-100">
+    <section id="about" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto text-center">
-        <h3 className="text-3xl font-bold text-green-700 mb-8">Đội ngũ của chúng tôi</h3>
+        <h3 className="text-3xl font-bold text-green-400 mb-8 animate-fade-in">
+          Đội ngũ của chúng tôi
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
             >
-              <div className="w-32 h-32 mx-auto mb-6 bg-green-100 rounded-full overflow-hidden">
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden relative group-hover:scale-110 transition-transform duration-300">
                 {member.image ? (
-                  <img 
-                    src={member.image} 
+                  <img
+                    src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover border-4 border-green-400 rounded-full"
                     onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
+                      e.target.style.display = "none";
+                      e.target.nextSibling.style.display = "flex";
                     }}
                   />
                 ) : null}
-                <div 
-                  className="w-full h-full flex items-center justify-center"
-                  style={{ display: member.image ? 'none' : 'flex' }}
+                <div
+                  className={`w-full h-full flex items-center justify-center bg-gradient-to-r from-green-400 to-blue-500
+                  ${member.image ? "hidden" : "flex"} rounded-full text-3xl font-bold text-white`}
                 >
-                  <span className="text-green-600 text-3xl font-bold">
-                    {member.name.charAt(0)}
-                  </span>
+                  {member.name.charAt(0)}
                 </div>
               </div>
-              <h4 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h4>
-              <h5 className="text-green-600 font-semibold mb-3">{member.role}</h5>
+              <h4 className="text-xl font-bold text-gray-100 mb-2">{member.name}</h4>
+              <h5 className="text-green-400 font-semibold mb-3 animate-pulse">{member.role}</h5>
             </div>
           ))}
         </div>
