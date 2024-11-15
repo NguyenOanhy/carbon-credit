@@ -12,7 +12,7 @@ function Features() {
           <div className="p-6 bg-gray-800 shadow-lg rounded-lg border border-transparent hover:border-green-400 hover:scale-105 transition-transform duration-300 animate-slide-up relative group overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             <ShieldCheckIcon className="h-12 w-12 mx-auto text-green-400 mb-4 animate-bounce" />
-            <h4 className="text-xl font-semibold mb-2 text-white">Thêm KYC</h4>
+            <h4 className="text-xl font-semibold mb-2 text-white">eKYC</h4>
             <p className="text-gray-300 text-sm">Quy trình KYC riêng biệt cho cá nhân và tổ chức để đảm bảo tính minh bạch.</p>
           </div>
 
@@ -43,7 +43,7 @@ function Features() {
           <div className="p-6 bg-gray-800 shadow-lg rounded-lg border border-transparent hover:border-green-400 hover:scale-105 transition-transform duration-300 animate-slide-up relative group overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             <CreditCardIcon className="h-12 w-12 mx-auto text-green-400 mb-4 animate-bounce" />
-            <h4 className="text-xl font-semibold mb-2 text-white">Quản lý token carbon</h4>
+            <h4 className="text-xl font-semibold mb-2 text-white">Quản lý ví blockchain</h4>
             <p className="text-gray-300 text-sm">Xem địa chỉ ví và số dư token, minh bạch hoá tín chỉ chuyển đổi thành token.</p>
           </div>
 
