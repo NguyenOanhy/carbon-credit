@@ -41,7 +41,7 @@ function HowItWorks() {
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 group overflow-hidden relative">
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             <UserAddIcon className="h-12 w-12 mx-auto text-green-400 mb-4 animate-bounce" />
-            <h4 className="text-2xl font-semibold mb-4">Đăng ký thông tin cây</h4>
+            <h4 className="text-2xl font-semibold mb-4">Đăng ký thông tin cậy</h4>
             <p className="text-gray-300">Người nông dân đăng ký cây qua ảnh và thông tin chi tiết.</p>
           </div>
 

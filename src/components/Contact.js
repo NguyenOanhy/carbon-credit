@@ -27,7 +27,7 @@ function Contact() {
             <div className="mb-6">
               <input
                 type="text"
-                className="w-full p-3 border border-white rounded-lg bg-white bg-opacity-50 text-white placeholder-white"
+                className="w-full p-3 border border-gray-300 rounded-lg bg-white bg-opacity-50 text-black placeholder-gray-600"
                 placeholder="Họ tên"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -37,7 +37,7 @@ function Contact() {
             <div className="mb-6">
               <input
                 type="email"
-                className="w-full p-3 border border-white rounded-lg bg-white bg-opacity-50 text-white placeholder-white"
+                className="w-full p-3 border border-gray-300 rounded-lg bg-white bg-opacity-50 text-black placeholder-gray-600"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -46,7 +46,7 @@ function Contact() {
             </div>
             <div className="mb-6">
               <textarea
-                className="w-full p-3 border border-white rounded-lg bg-white bg-opacity-50 text-white placeholder-white"
+                className="w-full p-3 border border-gray-300 rounded-lg bg-white bg-opacity-50 text-black placeholder-gray-600"
                 placeholder="Tin nhắn"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -55,7 +55,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full p-3 border-2 border-white rounded-md bg-white bg-opacity-50 text-white hover:bg-opacity-70 transition duration-300"
+              className="w-full p-3 border border-gray-300 rounded-lg bg-white bg-opacity-50 text-black placeholder-gray-600"
             >
               Gửi đi
             </button>
